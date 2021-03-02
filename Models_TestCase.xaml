@@ -125,14 +125,14 @@
         </ui:Click.Target>
       </ui:Click>
     </Sequence>
-    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="752.8,972" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="766.4,1212" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into text field" sap:VirtualizedContainerService.HintSize="711.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="New Word [k(enter)]">
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into text field" sap:VirtualizedContainerService.HintSize="724.8,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="New Word [k(enter)]">
         <ui:TypeInto.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6ee2ddb5-27cc-4746-819f-43c7fde36a90" InformativeScreenshot="e5f1f5c83f8299f71854e6eae4d3b7fc" Selector="&lt;html app='chrome.exe' title='Models' /&gt;&lt;webctrl name='1-first' tag='INPUT' class='item-input' /&gt;">
             <ui:Target.TimeoutMS>
@@ -144,7 +144,7 @@
           </ui:Target>
         </ui:TypeInto.Target>
       </ui:TypeInto>
-      <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify model1 Control Attribute" sap:VirtualizedContainerService.HintSize="711.2,181.6" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify model1 Control Attribute" sap:VirtualizedContainerService.HintSize="724.8,181.6" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
         <uta:VerifyControlAttribute.ActivityToTest>
           <ActivityAction>
             <ui:UiElementExists DisplayName="Element alert2 Exists " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
@@ -194,7 +194,7 @@
           <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
         </uta:VerifyControlAttribute.Expression>
       </uta:VerifyControlAttribute>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Enthusiasm" sap:VirtualizedContainerService.HintSize="711.2,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Enthusiasm" sap:VirtualizedContainerService.HintSize="724.8,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
         <ui:Click.CursorPosition>
           <ui:CursorPosition Position="Center">
             <ui:CursorPosition.OffsetX>
@@ -216,7 +216,7 @@
           </ui:Target>
         </ui:Click.Target>
       </ui:Click>
-      <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify model2 Control Attribute" sap:VirtualizedContainerService.HintSize="711.2,181.6" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+      <uta:VerifyControlAttribute KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify model2 Control Attribute" sap:VirtualizedContainerService.HintSize="724.8,181.6" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
         <uta:VerifyControlAttribute.ActivityToTest>
           <ActivityAction>
             <ui:UiElementExists DisplayName="Element alert1 Exists " sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
@@ -266,7 +266,52 @@
           <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
         </uta:VerifyControlAttribute.Expression>
       </uta:VerifyControlAttribute>
-      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Logout workflow" sap:VirtualizedContainerService.HintSize="711.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Logout.xaml">
+      <ui:AnchorBase AnchorPosition="Auto" DisplayName="New Word Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,200" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+        <ui:AnchorBase.Action>
+          <ActivityAction x:TypeArguments="ui:Anchor">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+            </ActivityAction.Argument>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click X" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="690c8473-d256-49ce-a581-c77a9806ac47" InformativeScreenshot="c25b88863d673cd72802128781281893" Selector="&lt;webctrl aaname='×' parentid='root' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </ActivityAction>
+        </ui:AnchorBase.Action>
+        <ui:AnchorBase.AnchorProvider>
+          <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element New Word" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+            <ui:WaitUiElementAppear.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fadcc490-daba-4d42-9e5b-6a39dcd96dd6" InformativeScreenshot="dc8fbe519894e270298b355685b81462" Selector="&lt;html app='chrome.exe' title='Models' /&gt;&lt;webctrl aaname='New Word*' parentid='root' tag='SPAN' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:WaitUiElementAppear.Target>
+          </ui:WaitUiElementAppear>
+        </ui:AnchorBase.AnchorProvider>
+      </ui:AnchorBase>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Logout workflow" sap:VirtualizedContainerService.HintSize="724.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Logout.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_Tab">
             <Literal x:TypeArguments="x:String">Models</Literal>
