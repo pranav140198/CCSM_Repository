@@ -40,6 +40,11 @@
         "editingStatus": "InProgress",
         "testCaseId": "aeef801f-726a-4fda-a757-ea7012901d99",
         "fileName": "Login_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e0e831ce-ddf8-46bc-9e8e-17307e4bdaed",
+        "fileName": "Dashboard_TestCase.xaml"
       }
     ],
     "modernBehavior": false
