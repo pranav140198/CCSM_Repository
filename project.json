@@ -3,12 +3,12 @@
   "description": "Test Automation Project",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.OCR.Activities": "[2.4.1]",
     "UiPath.System.Activities": "[20.10.3]",
     "UiPath.Testing.Activities": "[1.2.5]",
     "UiPath.UIAutomation.Activities": "[20.10.9]"
   },
   "webServices": [],
-  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.5.0",
   "projectVersion": "1.0.0",
@@ -21,9 +21,7 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow",
-    "readyForPiP": false,
-    "startsInPiP": false
+    "executionType": "Workflow"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -31,9 +29,6 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
-    },
-    "processOptions": {
-      "ignoredFiles": []
     },
     "fileInfoCollection": [
       {
@@ -48,14 +43,20 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "1555b718-72c2-41dd-b7c3-222f1321dac2",
-        "fileName": "Models_TestCase.xaml"
+        "testCaseId": "6e5c8f00-204f-45c2-b226-b53579d44202",
+        "fileName": "CustomerTab_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2d94d6e2-81f6-4dfe-952c-179b446f858c",
+        "fileName": "PlaylistTab_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "73e8b114-130b-422c-b3df-491d05d1249d",
+        "fileName": "PlayListTab_TestCase1.xaml"
       }
-    ],
-    "modernBehavior": false
+    ]
   },
-  "expressionLanguage": "VisualBasic",
-  "isTemplate": false,
-  "templateProjectData": {},
-  "publishData": {}
+  "expressionLanguage": "VisualBasic"
 }
