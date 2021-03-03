@@ -55,6 +55,16 @@
         "editingStatus": "InProgress",
         "testCaseId": "933e2eb8-0650-4c7d-9678-027be7a74f82",
         "fileName": "Team_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6cc31b4f-525a-4844-88cd-ada3a02696d5",
+        "fileName": "PlayListTab_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "46d53478-b3a3-47ac-8119-8e1ef4cd36d4",
+        "fileName": "CustomerTab_TestCase.xaml"
       }
     ],
     "modernBehavior": false

@@ -53,6 +53,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Testing</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Team_TestCase" sap:VirtualizedContainerService.HintSize="241.6,379.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -89,7 +90,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="375.2,353.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -102,7 +103,7 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_CCSM_Url">[URL]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Team" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click Team" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
         <ui:Click.CursorPosition>
           <ui:CursorPosition Position="Center">
             <ui:CursorPosition.OffsetX>
@@ -122,14 +123,14 @@
         </ui:Click.Target>
       </ui:Click>
     </Sequence>
-    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="828,992" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="On Element Appear 'STRONG'" sap:VirtualizedContainerService.HintSize="786.4,745.6" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1">
+      <ui:OnUiElementAppear ContinueOnError="{x:Null}" FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="On Element Appear 'STRONG'" sap:VirtualizedContainerService.HintSize="786.4,745.6" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1" RepeatForever="False">
         <ui:OnUiElementAppear.Body>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="752.8,568.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
@@ -230,9 +231,6 @@
             </ui:Click>
           </Sequence>
         </ui:OnUiElementAppear.Body>
-        <ui:OnUiElementAppear.RepeatForever>
-          <Literal x:TypeArguments="x:Boolean" />
-        </ui:OnUiElementAppear.RepeatForever>
         <ui:OnUiElementAppear.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73a49ec6-fe19-46f1-b4d2-cbfb7c63b7e8" InformativeScreenshot="c799ef33841dcac0a40188d63139c841" Selector="&lt;html app='chrome.exe' title='Team' /&gt;&lt;webctrl tag='STRONG' aaname='Onboarding ' /&gt;" WaitForReady="COMPLETE">
             <ui:Target.TimeoutMS>
@@ -243,9 +241,7 @@
       </ui:OnUiElementAppear>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Logout workflow" sap:VirtualizedContainerService.HintSize="786.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Logout.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Tab">
-            <Literal x:TypeArguments="x:String">Team</Literal>
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Tab">Team</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
