@@ -53,6 +53,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.Testing</AssemblyReference>
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Models_TestCase" sap:VirtualizedContainerService.HintSize="241.6,379.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -89,7 +90,7 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="When" sap:VirtualizedContainerService.HintSize="375.2,353.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -114,7 +115,7 @@
           </ui:CursorPosition>
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ec15d86-d88b-480d-8c47-398846e4ecc9" InformativeScreenshot="82bd2100902c65ebcb3c549fc8b1b9cc" Selector="&lt;html app='chrome.exe' title='*' /&gt;&lt;webctrl aaname='Models' tag='SMALL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='SPAN' /&gt;">
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5ec15d86-d88b-480d-8c47-398846e4ecc9" InformativeScreenshot="82bd2100902c65ebcb3c549fc8b1b9cc" Selector="&lt;html app='chrome.exe' title='Dashboard' /&gt;&lt;webctrl aaname='Models' tag='SMALL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='SPAN' /&gt;">
             <ui:Target.TimeoutMS>
               <InArgument x:TypeArguments="x:Int32" />
             </ui:Target.TimeoutMS>
@@ -125,7 +126,7 @@
         </ui:Click.Target>
       </ui:Click>
     </Sequence>
-    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="766.4,1212" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -313,9 +314,7 @@
       </ui:AnchorBase>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Logout workflow" sap:VirtualizedContainerService.HintSize="724.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Logout.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Tab">
-            <Literal x:TypeArguments="x:String">Models</Literal>
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Tab">Models</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
